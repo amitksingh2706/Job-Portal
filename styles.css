@@ -1,0 +1,15 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+form {
+    /*1em=16px and the text inside it will be in italic form */
+    background-color: #fff;
+    margin-top: 3em;
+    margin-right: 10em;
+    margin-left: 30em;
+    padding: 20px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    border-radius: 12px;
+}

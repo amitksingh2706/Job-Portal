@@ -1,0 +1,81 @@
+            /*Creating the fixed position for the navbar at the top with complete width*/
+            
+            .navbar {
+                position: fixed;
+                /*Keeping the position as fixed for the navbar so that on scrolling it would not gonna move*/
+                width: 100%;
+                /*Keeping the width as 100% so that it will cover th whole width*/
+                top: 0;
+                /*Keeping the top as 0 so that so that navbar will be fixed placed at the top*/
+                overflow: hidden;
+            }
+            /* The side navigation menu */
+            
+            .sidebar {
+                margin-top: 60px;
+                padding: 0;
+                width: 200px;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: auto;
+            }
+            /* Sidebar links */
+            
+            .sidebar a {
+                display: block;
+                color: black;
+                padding: 16px;
+                text-decoration: none;
+            }
+            /* Active/current link */
+            
+            .sidebar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+            /* Links on mouse-over */
+            
+            .sidebar a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+            /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+            
+            div.content {
+                margin-left: 200px;
+                padding: 1px 16px;
+                height: 1000px;
+            }
+            /* On screens that are less than 700px wide, make the sidebar into a topbar */
+            
+            @media screen and (max-width: 700px) {
+                .sidebar {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+                .sidebar a {
+                    float: left;
+                }
+                div.content {
+                    margin-left: 0;
+                }
+            }
+            /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+            
+            @media screen and (max-width: 400px) {
+                .sidebar a {
+                    text-align: center;
+                    float: none;
+                }
+            }
+            
+            .lead {
+                font-weight: bold;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: #fff;
+                box-shadow: 10px 10px 8px 10px #888888;
+                border-radius: 12px;
+                padding: 20px;
+            }
